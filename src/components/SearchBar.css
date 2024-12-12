@@ -1,0 +1,15 @@
+.search-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centers the search bar */
+  margin-bottom: 20px; /* Adds space below the search bar */
+}
+
+.search-input {
+  width: 80%; /* Makes the input take up most of the screen width */
+  max-width: 600px; /* Optional: Limits the maximum width */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}

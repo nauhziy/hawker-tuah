@@ -1,0 +1,35 @@
+.banner {
+  position: relative;
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7_7RccCWxZnP-F7SOkNgpk7zZF1H5Yu3SvigRCxqmPFjh_GWO1CFcCiTXntHEDUH7SQOdRYEnyUZbCQ-MciFdcnAc3NpXZh6Hmu6brNYco8WdezDWigOdfCbH10CqYesJNjfLyEUMIuQ/s1600/satay_club_lau_pa_sat.jpg");
+  background-size: cover; /* Ensures the image covers the entire banner */
+  background-position: center; /* Centers the image */
+  color: black; /* Ensures the text is visible on top of the image */
+  padding: 50px 0;
+  text-align: center;
+  height: 300px; /* Adjust the height as needed */
+}
+
+.banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(215, 201, 201, 0.5);
+}
+
+.banner__info {
+  position: relative;
+}
+
+.banner__info h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.banner__info h5 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
