@@ -119,7 +119,7 @@ function CardPage() {
           <br></br>
           <br></br>
           <Button variant="primary" onClick={() => setShowModal(true)}>
-            Subscribe for SMS Updates
+            Subscribe for Hawker Closure Updates via SMS
           </Button>
           <Modal show={showModal} onHide={() => setShowModal(false)}>
             <Modal.Header closeButton>
