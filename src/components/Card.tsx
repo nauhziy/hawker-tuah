@@ -1,6 +1,7 @@
 import "./Card.css";
 
 interface CardProps {
+  serial_no: string;
   src: string;
   name: string;
   //   address: string;

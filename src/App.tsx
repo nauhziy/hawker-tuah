@@ -1,20 +1,18 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import Home from "./components/Home";
+import CardPage from "./components/CardPage";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      {/* Header */}
-      {/* Banner */}
-      {/* Cards */}
-      {/* Footer */}
-
-      {/* <iframe
-        width="1200"
-        height="600"
-        src="https://data.gov.sg/datasets/d_bda4baa634dd1cc7a6c7cad5f19e2d68/explorer"
-        frameborder="0"
-      ></iframe> */}
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/card/:id" element={<CardPage />} />
+        </Routes>
+      </Router>
+      <Analytics />
     </div>
   );
 }

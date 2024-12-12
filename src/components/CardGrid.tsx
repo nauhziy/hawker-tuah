@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Card from "./Card";
 import SearchBar from "./SearchBar";
 import "./Card.css";
+import { track } from "@vercel/analytics";
 
 interface CardData {
+  serial_no: string;
   name: string;
   photourl: string;
   //   description: string;
@@ -24,6 +27,7 @@ function CardGrid() {
       .then((response) => response.json())
       .then((data) => {
         const fetchedData = data.result.records.map((item: any) => ({
+          serial_no: item.serial_no,
           name: item.name,
           photourl: item.photourl,
           //   description: item.description_myenv,
@@ -68,7 +72,21 @@ function CardGrid() {
           <div>No results found</div>
         ) : (
           filteredData.map((card) => (
-            <Card src={card.photourl} name={card.name} />
+            <Link
+              to={`/card/${card.serial_no}`}
+              key={card.serial_no}
+              onClick={() => {
+                track("Click Card", {
+                  name: card.name,
+                });
+              }}
+            >
+              <Card
+                serial_no={card.serial_no}
+                src={card.photourl}
+                name={card.name}
+              />
+            </Link>
           ))
         )}
       </div>
