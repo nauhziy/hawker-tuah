@@ -66,7 +66,7 @@ function CardPage() {
     // For now, we'll just log it and close the modal
     console.log(`Subscribed phone number: ${phoneNumber}`);
     setSubscribed(true);
-    setShowModal(false); // Close the modal
+    setShowModal(false);
   };
 
   if (loading) {
@@ -100,6 +100,7 @@ function CardPage() {
           alt="Hawker Tuah Logo"
           style={{ width: "40px", height: "40px", marginRight: "10px" }}
         />
+        <Button variant="secondary">Home</Button>
       </Link>
       <div className="card-page__header">
         <h1>{hawkerData.name}</h1>
