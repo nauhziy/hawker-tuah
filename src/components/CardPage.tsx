@@ -21,9 +21,9 @@ function CardPage() {
   const [hawkerData, setHawkerData] = useState<HawkerCenter | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [showModal, setShowModal] = useState(false); // State to control modal visibility
-  const [phoneNumber, setPhoneNumber] = useState(""); // State for storing phone number
-  const [subscribed, setSubscribed] = useState(false); // State to track subscription status
+  const [showModal, setShowModal] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [subscribed, setSubscribed] = useState(false);
 
   useEffect(() => {
     const fetchHawkerData = async () => {

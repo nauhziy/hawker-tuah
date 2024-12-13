@@ -1,12 +1,12 @@
 .banner {
   position: relative;
   background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7_7RccCWxZnP-F7SOkNgpk7zZF1H5Yu3SvigRCxqmPFjh_GWO1CFcCiTXntHEDUH7SQOdRYEnyUZbCQ-MciFdcnAc3NpXZh6Hmu6brNYco8WdezDWigOdfCbH10CqYesJNjfLyEUMIuQ/s1600/satay_club_lau_pa_sat.jpg");
-  background-size: cover; /* Ensures the image covers the entire banner */
-  background-position: center; /* Centers the image */
-  color: black; /* Ensures the text is visible on top of the image */
+  background-size: cover;
+  background-position: center;
+  color: black;
   padding: 50px 0;
   text-align: center;
-  height: 300px; /* Adjust the height as needed */
+  height: 300px;
 }
 
 .banner__overlay {

@@ -12,10 +12,10 @@
 }
 
 .card > img {
-  object-fit: cover; /* Ensures uniform aspect ratio and cropping */
-  width: 100%; /* Makes image take full width of the card */
-  height: 200px; /* Fixed height for uniformity */
-  object-position: center; /* Center the image */
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-position: center;
 }
 
 .card__info {
@@ -23,7 +23,7 @@
   border-radius: 10px;
   padding: 20px;
   padding-top: 20px;
-  border: 1px solid transparent; /* Fix the border issue */
+  border: 1px solid transparent;
 }
 
 .card__info > h2 {
@@ -40,34 +40,30 @@
 
 .card-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-  gap: 20px; /* Space between cards */
-  padding: 20px; /* Padding around the grid */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
 }
 
 .card {
-  border: 1px solid #ccc; /* Optional: Light border */
+  border: 1px solid #ccc;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.05); /* Zoom effect on hover */
+  transform: scale(1.05);
 }
 
-/* Optional: Make the layout responsive */
 @media (max-width: 1200px) {
   .card-list {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* 2 cards per row on medium screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .card-list {
-    grid-template-columns: 1fr; /* 1 card per row on smaller screens */
+    grid-template-columns: 1fr;
   }
 }
